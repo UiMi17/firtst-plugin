@@ -6,6 +6,6 @@ public final class FirstPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
+        System.out.println("Hello world!");
     }
 }
