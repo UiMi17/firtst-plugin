@@ -12,16 +12,18 @@ public final class FirstPlugin extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        Bukkit.getPluginManager().registerEvents(this, this);
-    }
-
-    @EventHandler
-    public void onPlayerMove(PlayerMoveEvent e){
-
-        if (e.getTo().getX() > 100 && e.getTo().getZ() > 100) {
-            e.setCancelled(true);
-            e.getPlayer().sendMessage(ChatColor.DARK_BLUE + "YOU are frozen");
-        }
+//        Bukkit.getPluginManager().registerEvents(this, this);
+        getCommand("heal").setExecutor(new HealCommand());
 
     }
+
+//    @EventHandler
+//    public void onPlayerMove(PlayerMoveEvent e){
+//
+//        if (e.getTo().getX() > 100 && e.getTo().getZ() > 100) {
+//            e.setCancelled(true);
+//            e.getPlayer().sendMessage(ChatColor.DARK_BLUE + "YOU are frozen");
+//        }
+//
+//    }
 }
