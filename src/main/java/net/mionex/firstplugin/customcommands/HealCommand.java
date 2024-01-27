@@ -1,4 +1,4 @@
-package net.mionex.firstplugin;
+package net.mionex.firstplugin.customcommands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
